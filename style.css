@@ -6,9 +6,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('background-gym.png');
+  background-image: url(background-gym.png);
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size: cover;
+  background-position: center center;
 }
 
 #imc-form {
