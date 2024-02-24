@@ -6,10 +6,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url(background-gym.png);
+  background-image: url(background-gym.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 
 #imc-form {
@@ -39,6 +39,11 @@ input[type="text"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+#nome-error, #altura-error, #altura-error2, #peso-error{
+  display: none;
+  color: red;
 }
 
 

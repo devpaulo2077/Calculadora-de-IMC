@@ -1,16 +1,43 @@
 document.addEventListener('DOMContentLoaded', function(){
     const form = document.getElementById('calc-form');
     const nomeInput = document.getElementById('nome');
+    const alturaInput = document.getElementById('altura');
+    const pesoInput = document.getElementById('peso')
     const nomeError = document.getElementById('nome-error');
+    const alturaError = document.getElementById('altura-error');
+    const alturaError2 = document.getElementById('altura-error2');
+    const pesoError = document.getElementById('peso-error');
+    
 
     form.addEventListener('submit', function(evento){
         evento.preventDefault();
 
         if(!nomeInput.value){
-            nomeError.style.display = 'block'
+            nomeError.style.display = 'block';
             return;
         } else {
             nomeError.style.display = 'none';
+        };
+
+        if(!alturaInput.value){
+            alturaError.style.display = 'block';
+            return;
+        } else {
+            alturaError.style.display = 'none';
+        };
+        if(!pesoInput.value) {
+            pesoError.style.display = 'block';
+            return
+        } else {
+            pesoError.style.display = 'none';
+        };
+
+
+        if(alturaInput.value >= 100){
+            alturaError2.style.display = 'block'
+            return
+        } else {
+            alturaError2.style.display = 'none'
         }
 
         const nome = nomeInput.value

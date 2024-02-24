@@ -6,6 +6,7 @@
     <title>Calculadora IMC</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <link rel="icon" href="">
 </head>
 <body>
     <div id="imc-form">
@@ -15,15 +16,18 @@
             <div>
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome">
-                <div id="nome-error" style="color: red; display: none;">Por favor, insira seu nome</div>
+                <div id="nome-error">Por favor, insira seu nome</div>
             </div>
             <div>
                 <label for="altura">Altura (m):</label>
-                <input type="number" name="altura" id="altura" step="0.01" required>
+                <input type="number" name="altura" id="altura" step="0.01">
+                <div id="altura-error">Por favor, insira sua altura</div>
+                <div id="altura-error2">Insira um "." ou "," após o primeiro número</div>
             </div>
             <div>
                 <label for="peso">Peso (kg):</label>
-                <input type="number" name="peso" id="peso" required>
+                <input type="number" name="peso" id="peso">
+                <div id="peso-error">Por favor, insira seu peso</div>
             </div>
             <input type="hidden" id="categoria" name="categoria">
             <button type="submit">Calcular</button>
